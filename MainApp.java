@@ -11,28 +11,28 @@ import java.util.Comparator;
 public class MainApp {
     public static void main(String[] args) {
 
-        final PharmacyIterable p1 = new PharmacyIterable();
+        final Pharmacy p1 = new Pharmacy("P1");
         p1
                 .addComponent((new Penicillin("Component1", 2.0, 10)))
                 .addComponent(new Salt("Salt", 10.0, 50))
                 .addComponent(new Water("Water", 5.0, 100));
 
-        final PharmacyIterable p2 = new PharmacyIterable();
+        final Pharmacy p2 = new Pharmacy("P2");
         p2
                 .addComponent((new Penicillin("Penicillin", 2.0, 10)))
                 .addComponent(new Salt("Salt", 20.0, 70))
                 .addComponent(new Water("Water", 5.0, 100));
 
-        final PharmacyIterable p3 = new PharmacyIterable();
+        final Pharmacy p3 = new Pharmacy("P3");
         p3
                 .addComponent((new Penicillin("Penicillin", 2.0, 10)))
                 .addComponent(new Salt("Salt", 20.0, 70))
                 .addComponent(new Water("Water", 5.0, 100));
 
-        final ArrayList<PharmacyIterable> pharmacyIterables = new ArrayList<>();
-        pharmacyIterables.add(p1);
-        pharmacyIterables.add(p2);
-        pharmacyIterables.add(p3);
+        final ArrayList<Pharmacy> pharmacy = new ArrayList<>();
+        pharmacy.add(p1);
+        pharmacy.add(p2);
+        pharmacy.add(p3);
 
 //        Collections.sort(pharmacyIterables);
 
